@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0245f45e-2f43-4954-a156-8288b23a6e3a" name="Changes" comment="" />
+    <list default="true" id="0245f45e-2f43-4954-a156-8288b23a6e3a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,6 +161,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -172,6 +175,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
       <recent name="$PROJECT_DIR$/resources/js" />
       <recent name="$PROJECT_DIR$/public" />
@@ -204,7 +208,7 @@
       <workItem from="1639929292625" duration="4000" />
       <workItem from="1640604175567" duration="30000" />
       <workItem from="1642032473323" duration="1359000" />
-      <workItem from="1642077633011" duration="5343000" />
+      <workItem from="1642077633011" duration="7792000" />
     </task>
     <servers />
   </component>

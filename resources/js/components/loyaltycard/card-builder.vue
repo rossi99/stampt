@@ -1,3 +1,80 @@
+<!--<template>-->
+<!--    <div class="row">-->
+<!--        <div class="col-3">-->
+<!--            <h3>Draggable 1</h3>-->
+<!--            <draggable-->
+<!--                class="dragArea list-group"-->
+<!--                :list="list1"-->
+<!--                :group="{ name: 'people', pull: 'clone', put: false }"-->
+<!--                @change="log"-->
+<!--            >-->
+<!--                <div-->
+<!--                    class="list-group-item"-->
+<!--                    v-for="element in list1"-->
+<!--                    :key="element.name"-->
+<!--                >-->
+<!--                    {{ element.name }}-->
+<!--                </div>-->
+<!--            </draggable>-->
+<!--        </div>-->
+
+<!--        <div class="col-3">-->
+<!--            <h3>Draggable 2</h3>-->
+<!--            <draggable-->
+<!--                class="dragArea list-group"-->
+<!--                :list="list2"-->
+<!--                group="people"-->
+<!--                @change="log"-->
+<!--            >-->
+<!--                <div-->
+<!--                    class="list-group-item"-->
+<!--                    v-for="element in list2"-->
+<!--                    :key="element.name"-->
+<!--                >-->
+<!--                    {{ element.name }}-->
+<!--                </div>-->
+<!--            </draggable>-->
+<!--        </div>-->
+
+<!--        <rawDisplayer class="col-3" :value="list1" title="List 1" />-->
+
+<!--        <rawDisplayer class="col-3" :value="list2" title="List 2" />-->
+<!--    </div>-->
+<!--</template>-->
+
+<!--<script>-->
+<!--import draggable from 'vuedraggable'-->
+<!--export default {-->
+<!--    name: "clone",-->
+<!--    display: "Clone",-->
+<!--    order: 2,-->
+<!--    components: {-->
+<!--        draggable-->
+<!--    },-->
+<!--    data() {-->
+<!--        return {-->
+<!--            list1: [-->
+<!--                { name: "John", id: 1 },-->
+<!--                { name: "Joao", id: 2 },-->
+<!--                { name: "Jean", id: 3 },-->
+<!--                { name: "Gerard", id: 4 }-->
+<!--            ],-->
+<!--            list2: [-->
+<!--                { name: "Juan", id: 5 },-->
+<!--                { name: "Edgard", id: 6 },-->
+<!--                { name: "Johnson", id: 7 }-->
+<!--            ]-->
+<!--        };-->
+<!--    },-->
+<!--    methods: {-->
+<!--        log: function(evt) {-->
+<!--            window.console.log(evt);-->
+<!--        }-->
+<!--    }-->
+<!--};-->
+<!--</script>-->
+<!--<style scoped></style>-->
+
 <template>
     <div class="content" id="content">
         <div class="card-element panel">
@@ -9,41 +86,13 @@
                     </div>
                 </div>
 
-                <!-- Logo -->
-                <div class="item-row">
-                    <div class="item-info">
-                        <div class="label">
-                            <p>Logo</p>
-                        </div>
-
-                        <div class="element-container">
-                            <!-- div Item -->
-                            <div class="element-holder"> <!-- :list="arrayElements" group="elements" -->
-                                <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                            </div>
-                        </div>
-
-                        <div class="clearFix"></div>
+                <!-- Take all elements objects list -->
+                <draggable class="dragArea list-group" :list="cardElements" :group="{ name: 'people', pull: 'clone', put: false }" @change="log">
+                    <div class="list-group-item" v-for="element in cardElements" :key="element.name">
+                        {{ element.name }}
                     </div>
-                </div>
+                </draggable>
 
-                <!-- Stamp -->
-                <div class="item-row">
-                    <div class="item-info">
-                        <div class="label">
-                            <p>Stamp</p>
-                        </div>
-
-                        <div class="element-container">
-                            <!-- div Item -->
-                            <div class="element-holder"> <!--:list="arrayElements" group="elements" -->
-                                <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
-                            </div>
-                        </div>
-
-                        <div class="clearFix"></div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -59,7 +108,12 @@
                 <div class="card-holder">
                     <div class="blank-card">
                         <!-- Level 1 buckets -->
-                        <div class="lvl1-1 bucket empty"></div> <!-- :list="arrA" group="buckets" -->
+                        <draggable class="dragArea list-group" :list="arrA" group="cardItem" @change="log">
+                            <div class="lvl1-1 bucket empty" v-for="element in arrA" :key="element.name">
+                                {{ element.name }}
+                            </div>
+                        </draggable>
+
                         <div class="lvl1-2 bucket empty"></div> <!-- :list="arrB" group="buckets" -->
                         <div class="lvl1-3 bucket empty"></div> <!-- :list="arrC" group="buckets" -->
                         <div class="lvl1-4 bucket empty"></div> <!-- :list="arrD" group="buckets" -->
@@ -84,44 +138,38 @@
         </div>
 
         <div class="clearFix"></div>
+
+        <rawDisplayer class="col-3" :value="arrA" title="ArrA" />
+
     </div>
 </template>
 
 <script>
-// import div from "vuediv";
-//
-// export default {
-//     name: "clone",
-//     display: "Clone",
-//     order: 2,
-//     components: {
-//         div
-//     },
-//
-//     data() {
-//         return {
-//             arrayElements: [
-//                 {name: "Logo"},
-//                 {name: "stamp"},
-//             ],
-//             arrA: [],
-//             arrB: [],
-//             arrC: [],
-//             arrD: [],
-//             arrE: [],
-//             arrF: [],
-//             arrG: [],
-//             arrH: [],
-//             arrI: [],
-//             arrJ: [],
-//             arrK: [],
-//             arrL: [],
-//             arrM: [],
-//             arrN: [],
-//             arrO: [],
-//         };
-//     }
-// };
+import draggable from 'vuedraggable'
+
+export default {
+    name: "clone",
+    display: "Clone",
+    order: 2,
+    components: {
+        draggable
+    },
+
+    data() {
+        return {
+            cardElements: [
+                { name: "Logo", id: 1 },
+                { name: "Stamp", id: 2 }
+            ],
+            arrA: []
+        };
+    },
+    methods: {
+        log: function(evt) {
+            window.console.log(evt);
+        }
+    }
+};
 </script>
 
 <style scoped>

@@ -15392,6 +15392,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// Draggable Script
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "clone",
@@ -15429,6 +15458,188 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     log: function log(evt) {
       window.console.log(evt);
+    }
+  },
+  watch: {
+    arrA: function arrA(val) {
+      var bucketA = document.getElementById("bucketA"); // remove empty class
+
+      if (val.length > 0) {
+        bucketA.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrA.pop();
+      }
+    },
+    arrB: function arrB(val) {
+      var bucketB = document.getElementById("bucketB"); // remove empty class
+
+      if (val.length > 0) {
+        bucketB.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrB.pop();
+      }
+    },
+    arrC: function arrC(val) {
+      var bucketC = document.getElementById("bucketC"); // remove empty class
+
+      if (val.length > 0) {
+        bucketC.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrC.pop();
+      }
+    },
+    arrD: function arrD(val) {
+      var bucketD = document.getElementById("bucketD"); // remove empty class
+
+      if (val.length > 0) {
+        bucketD.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrD.pop();
+      }
+    },
+    arrE: function arrE(val) {
+      var bucketE = document.getElementById("bucketE"); // remove empty class
+
+      if (val.length > 0) {
+        bucketE.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrE.pop();
+      }
+    },
+    arrF: function arrF(val) {
+      var bucketF = document.getElementById("bucketF"); // remove empty class
+
+      if (val.length > 0) {
+        bucketF.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrF.pop();
+      }
+    },
+    arrG: function arrG(val) {
+      var bucketG = document.getElementById("bucketG"); // remove empty class
+
+      if (val.length > 0) {
+        bucketG.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrG.pop();
+      }
+    },
+    arrH: function arrH(val) {
+      var bucketH = document.getElementById("bucketH"); // remove empty class
+
+      if (val.length > 0) {
+        bucketH.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrH.pop();
+      }
+    },
+    arrI: function arrI(val) {
+      var bucketI = document.getElementById("bucketI"); // remove empty class
+
+      if (val.length > 0) {
+        bucketI.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrI.pop();
+      }
+    },
+    arrJ: function arrJ(val) {
+      var bucketJ = document.getElementById("bucketJ"); // remove empty class
+
+      if (val.length > 0) {
+        bucketJ.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrJ.pop();
+      }
+    },
+    arrK: function arrK(val) {
+      var bucketK = document.getElementById("bucketK"); // remove empty class
+
+      if (val.length > 0) {
+        bucketK.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrK.pop();
+      }
+    },
+    arrL: function arrL(val) {
+      var bucketL = document.getElementById("bucketL"); // remove empty class
+
+      if (val.length > 0) {
+        bucketL.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrL.pop();
+      }
+    },
+    arrM: function arrM(val) {
+      var bucketM = document.getElementById("bucketM"); // remove empty class
+
+      if (val.length > 0) {
+        bucketM.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrM.pop();
+      }
+    },
+    arrN: function arrN(val) {
+      var bucketN = document.getElementById("bucketN"); // remove empty class
+
+      if (val.length > 0) {
+        bucketN.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrN.pop();
+      }
+    },
+    arrO: function arrO(val) {
+      var bucketO = document.getElementById("bucketO"); // remove empty class
+
+      if (val.length > 0) {
+        bucketO.classList.remove("empty");
+      } // ensures only one item
+
+
+      if (val.length > 1) {
+        this.arrO.pop();
+      }
     }
   }
 });
@@ -20242,7 +20453,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.content[data-v-07bcb27c] {\n    width: 100%;\n    height: calc(100vh - 85px); /* Element will be the full page height that starts at the bottom of header element */\n    position: relative;\n}\n.card-element[data-v-07bcb27c] {\n    width: 20%;\n}\n.card-preview[data-v-07bcb27c] {\n    width: 80%;\n}\n.panel[data-v-07bcb27c] {\n    height: calc(100vh - 85px);\n    float: left;\n    display: flex;\n    align-items: center;\n}\n.element[data-v-07bcb27c] {\n    width: 90%;\n}\n.preview[data-v-07bcb27c] {\n    width: 95%;\n}\n.heading-container[data-v-07bcb27c] {\n    width: calc(100% - 30px);\n    height: 80px;\n    -webkit-margin-start: 15px;\n            margin-inline-start: 15px;\n    -webkit-margin-end: 15px;\n            margin-inline-end: 15px;\n    display: flex;\n    align-items: center;\n}\n.header-content[data-v-07bcb27c] {\n    width: 100%;\n}\n.header-title[data-v-07bcb27c] {\n    width: 80%;\n    float: left;\n}\n.heading-icon[data-v-07bcb27c] {\n    width: 20%;\n    float: right;\n    text-align: right;\n}\n.heading[data-v-07bcb27c] {\n    font-weight: 800;\n}\n.sub-heading[data-v-07bcb27c] {\n    color: darkgrey;\n}\n.item-container[data-v-07bcb27c] {\n    height: calc(90vh - 85px);\n    margin: auto;\n    border-radius: 15px;\n    overflow: scroll;\n}\n.item-row[data-v-07bcb27c] {\n    width: 90%;\n    height: 120px;\n    margin: auto;\n    display: flex;\n    align-items: center;\n    border-bottom: 1px solid rgba(210, 210, 210, 0.4);\n}\n.item-row[data-v-07bcb27c]:last-child {\n    border-bottom: none;\n}\n.item-info[data-v-07bcb27c] {\n    width: 95%;\n    margin: auto;\n}\n.label[data-v-07bcb27c] {\n    width: 70%;\n    height: 70px;\n    float: left;\n    display: flex;\n    align-items: center;\n}\n.element-container[data-v-07bcb27c] {\n    width: 30%;\n    height: 70px;\n    float: left;\n    display: flex;\n    align-items: center;\n}\n.element-holder[data-v-07bcb27c] {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n}\n.stamp-holder[data-v-07bcb27c] {\n    border-radius: 50%;\n}\n.element-holder[data-v-07bcb27c]:hover {\n    cursor: pointer;\n    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4);\n}\n.stamp[data-v-07bcb27c] {\n    width: 75px;\n    height: 75px;\n    margin: auto;\n}\n.logo[data-v-07bcb27c] {\n    width: 80px;\n    height: 80px;\n    margin: auto;\n    border-radius: 50%;\n}\n.card-holder[data-v-07bcb27c] {\n    width: 100%;\n    height: calc(100% - 80px);\n    display: flex;\n    align-items: center;\n}\n.blank-card[data-v-07bcb27c] {\n    width: 600px;\n    height: 360px;\n    border-radius: 10px;\n    background: white;\n    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4);\n    margin: auto;\n    position: relative;\n}\n.bucket[data-v-07bcb27c] {\n    /* Size of bucket */\n    width: 120px;\n    height: 120px;\n\n    /* movable */\n    position: absolute;\n\n    /* Smooth fade */\n    transition: all 0.2s;\n}\n.bucket[data-v-07bcb27c]:hover {\n    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4);\n    cursor: pointer;\n}\n.empty[data-v-07bcb27c] {\n    /* Show area for user to drop item into */\n    background: rgba(210, 210, 210, 0.1);\n    border: 1px dashed rgba(210, 210, 210, 0.4);\n}\n\n/* Top layer buckets */\n.lvl1-1[data-v-07bcb27c]{\n    top: 0;\n    left: 0;\n\n    /* fit with card */\n    border-top-left-radius: 10px;\n}\n.lvl1-2[data-v-07bcb27c]{\n    top: 0;\n    left: 20%;\n}\n.lvl1-3[data-v-07bcb27c]{\n    top: 0;\n    left: 40%;\n}\n.lvl1-4[data-v-07bcb27c]{\n    top: 0;\n    left: 60%;\n}\n.lvl1-5[data-v-07bcb27c]{\n    top: 0;\n    left: 80%;\n\n    /* fit with card */\n    border-top-right-radius: 10px;\n}\n\n/* Middle layer buckets */\n.lvl2-1[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 0;\n}\n.lvl2-2[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 20%;\n}\n.lvl2-3[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 40%;\n}\n.lvl2-4[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 60%;\n}\n.lvl2-5[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 80%;\n}\n\n/* Bottom layer buckets */\n.lvl3-1[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 0;\n\n    /* fit with card */\n    border-bottom-left-radius: 10px;\n}\n.lvl3-2[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 20%;\n}\n.lvl3-3[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 40%;\n}\n.lvl3-4[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 60%;\n}\n.lvl3-5[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 80%;\n\n    /* fit with card */\n    border-bottom-right-radius: 10px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.content[data-v-07bcb27c] {\n    width: 100%;\n    height: calc(100vh - 85px); /* Element will be the full page height that starts at the bottom of header element */\n    position: relative;\n}\n.card-element[data-v-07bcb27c] {\n    width: 15%;\n}\n.card-preview[data-v-07bcb27c] {\n    width: 85%;\n}\n.panel[data-v-07bcb27c] {\n    height: calc(100vh - 85px);\n    float: left;\n    display: flex;\n    align-items: center;\n}\n.element[data-v-07bcb27c] {\n    width: 90%;\n}\n.preview[data-v-07bcb27c] {\n    width: 95%;\n}\n.heading-container[data-v-07bcb27c] {\n    width: calc(100% - 30px);\n    height: 80px;\n    -webkit-margin-start: 15px;\n            margin-inline-start: 15px;\n    -webkit-margin-end: 15px;\n            margin-inline-end: 15px;\n    display: flex;\n    align-items: center;\n}\n.header-content[data-v-07bcb27c] {\n    width: 100%;\n}\n.header-title[data-v-07bcb27c] {\n    width: 80%;\n    float: left;\n}\n.heading-icon[data-v-07bcb27c] {\n    width: 20%;\n    float: right;\n    text-align: right;\n}\n.heading[data-v-07bcb27c] {\n    font-weight: 800;\n}\n.sub-heading[data-v-07bcb27c] {\n    color: darkgrey;\n}\n.item-container[data-v-07bcb27c] {\n    height: calc(90vh - 85px);\n    margin: auto;\n    border-radius: 15px;\n    overflow: scroll;\n}\n.card-drag-element[data-v-07bcb27c] {\n    width: 90%;\n    height: 120px;\n    margin: auto;\n    display: flex;\n    align-items: center;\n    border-bottom: 1px solid rgba(210, 210, 210, 0.4);\n}\n.card-drag-element[data-v-07bcb27c]:last-child {\n    border-bottom: none;\n}\n.item-holder[data-v-07bcb27c] {\n    width: 100%;\n    text-align: center;\n}\n.stamp[data-v-07bcb27c] {\n    width: 75px;\n    height: 75px;\n    margin: auto;\n}\n.logo[data-v-07bcb27c] {\n    width: 80px;\n    height: 80px;\n    margin: auto;\n    border-radius: 50%;\n}\n.card-holder[data-v-07bcb27c] {\n    width: 100%;\n    height: calc(100% - 80px);\n    display: flex;\n    align-items: center;\n}\n.blank-card[data-v-07bcb27c] {\n    width: 600px;\n    height: 360px;\n    border-radius: 10px;\n    background: white;\n    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4);\n    margin: auto;\n    position: relative;\n}\n.bucket[data-v-07bcb27c] {\n    /* Size of bucket */\n    width: 120px;\n    height: 120px;\n\n    /* movable */\n    position: absolute;\n\n    /* Smooth fade */\n    transition: all 0.2s;\n}\n.drop-area[data-v-07bcb27c] {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n}\n.empty[data-v-07bcb27c] {\n    /* Outline */\n    border: 1px dashed rgba(160, 160, 160, 0.5);\n}\n.empty[data-v-07bcb27c]:hover {\n    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2);\n}\n\n/* Top layer buckets */\n.lvl1-1[data-v-07bcb27c]{\n    top: 0;\n    left: 0;\n\n    /* fit with card */\n    border-top-left-radius: 10px;\n}\n.lvl1-2[data-v-07bcb27c]{\n    top: 0;\n    left: 20%;\n}\n.lvl1-3[data-v-07bcb27c]{\n    top: 0;\n    left: 40%;\n}\n.lvl1-4[data-v-07bcb27c]{\n    top: 0;\n    left: 60%;\n}\n.lvl1-5[data-v-07bcb27c]{\n    top: 0;\n    left: 80%;\n\n    /* fit with card */\n    border-top-right-radius: 10px;\n}\n\n/* Middle layer buckets */\n.lvl2-1[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 0;\n}\n.lvl2-2[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 20%;\n}\n.lvl2-3[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 40%;\n}\n.lvl2-4[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 60%;\n}\n.lvl2-5[data-v-07bcb27c]{\n    top: 33.3%;\n    left: 80%;\n}\n\n/* Bottom layer buckets */\n.lvl3-1[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 0;\n\n    /* fit with card */\n    border-bottom-left-radius: 10px;\n}\n.lvl3-2[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 20%;\n}\n.lvl3-3[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 40%;\n}\n.lvl3-4[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 60%;\n}\n.lvl3-5[data-v-07bcb27c]{\n    top: 66.6%;\n    left: 80%;\n\n    /* fit with card */\n    border-bottom-right-radius: 10px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -52446,8 +52657,6 @@ var render = function () {
           _c(
             "draggable",
             {
-              staticClass: "dragArea list-group",
-              staticStyle: { "max-width": "120px" },
               attrs: {
                 list: _vm.cardElements,
                 group: { name: "cardItem", pull: "clone", put: false },
@@ -52457,27 +52666,31 @@ var render = function () {
             _vm._l(_vm.cardElements, function (element) {
               return _c(
                 "div",
-                { key: element.name, staticClass: "list-group-item" },
+                {
+                  key: element.name,
+                  staticClass: "card-drag-element",
+                  staticStyle: { cursor: "move" },
+                },
                 [
                   element.name === "Logo"
-                    ? _c("div", [
+                    ? _c("div", { staticClass: "item-holder" }, [
                         _c("img", {
                           staticClass: "logo",
                           attrs: {
                             src: "/images/card-builder/logo.png",
-                            alt: "div logo",
+                            alt: "logo",
                           },
                         }),
                       ])
                     : _vm._e(),
                   _vm._v(" "),
                   element.name === "Stamp"
-                    ? _c("div", [
+                    ? _c("div", { staticClass: "item-holder" }, [
                         _c("img", {
                           staticClass: "stamp",
                           attrs: {
                             src: "/images/card-builder/stamp.png",
-                            alt: "div stamp",
+                            alt: "stamp",
                           },
                         }),
                       ])
@@ -52497,657 +52710,787 @@ var render = function () {
         _vm._m(1),
         _vm._v(" "),
         _c("div", { staticClass: "card-holder" }, [
-          _c(
-            "div",
-            { staticClass: "blank-card" },
-            [
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrA, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl1-1 bucket empty" },
-                    _vm._l(_vm.arrA, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrB, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl1-2 bucket empty" },
-                    _vm._l(_vm.arrB, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrC, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl1-3 bucket empty" },
-                    _vm._l(_vm.arrC, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrD, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl1-4 bucket empty" },
-                    _vm._l(_vm.arrD, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrE, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl1-5 bucket empty" },
-                    _vm._l(_vm.arrE, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrF, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl2-1 bucket empty" },
-                    _vm._l(_vm.arrF, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrG, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl2-2 bucket empty" },
-                    _vm._l(_vm.arrG, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrH, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl2-3 bucket empty" },
-                    _vm._l(_vm.arrH, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrI, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl2-4 bucket empty" },
-                    _vm._l(_vm.arrI, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrJ, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl2-5 bucket empty" },
-                    _vm._l(_vm.arrJ, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrK, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl3-1 bucket empty" },
-                    _vm._l(_vm.arrK, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrL, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl3-2 bucket empty" },
-                    _vm._l(_vm.arrL, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrM, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl3-3 bucket empty" },
-                    _vm._l(_vm.arrM, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrN, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl3-4 bucket empty" },
-                    _vm._l(_vm.arrN, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "draggable",
-                {
-                  staticClass: "dragArea list-group",
-                  attrs: { list: _vm.arrO, group: "cardItem" },
-                  on: { change: _vm.log },
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "lvl3-5 bucket empty" },
-                    _vm._l(_vm.arrO, function (element) {
-                      return _c("div", { key: element.name }, [
-                        element.name === "Logo"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "logo",
-                                attrs: {
-                                  src: "/images/card-builder/logo.png",
-                                  alt: "div logo",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        element.name === "Stamp"
-                          ? _c("div", [
-                              _c("img", {
-                                staticClass: "stamp",
-                                attrs: {
-                                  src: "/images/card-builder/stamp.png",
-                                  alt: "div stamp",
-                                },
-                              }),
-                            ])
-                          : _vm._e(),
-                      ])
-                    }),
-                    0
-                  ),
-                ]
-              ),
-            ],
-            1
-          ),
+          _c("div", { staticClass: "blank-card" }, [
+            _c(
+              "div",
+              { staticClass: "lvl1-1 bucket empty", attrs: { id: "bucketA" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrA, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrA, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl1-2 bucket empty", attrs: { id: "bucketB" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrB, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrB, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl1-3 bucket empty", attrs: { id: "bucketC" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrC, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrC, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl1-4 bucket empty", attrs: { id: "bucketD" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrD, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrD, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl1-5 bucket empty", attrs: { id: "bucketE" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrE, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrE, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl2-1 bucket empty", attrs: { id: "bucketF" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrF, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrF, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl2-2 bucket empty", attrs: { id: "bucketG" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrG, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrG, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl2-3 bucket empty", attrs: { id: "bucketH" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrH, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrH, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl2-4 bucket empty", attrs: { id: "bucketI" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrI, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrI, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl2-5 bucket empty", attrs: { id: "bucketJ" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrJ, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrJ, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl3-1 bucket empty", attrs: { id: "bucketK" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrK, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrK, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl3-2 bucket empty", attrs: { id: "bucketL" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrL, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrL, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl3-3 bucket empty", attrs: { id: "bucketM" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrM, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrM, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl3-4 bucket empty", attrs: { id: "bucketN" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrN, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrN, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "lvl3-5 bucket empty", attrs: { id: "bucketO" } },
+              [
+                _c(
+                  "draggable",
+                  {
+                    staticClass: "drop-area",
+                    attrs: { list: _vm.arrO, group: "cardItem" },
+                    on: { change: _vm.log },
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { width: "100%", "text-align": "center" },
+                      },
+                      _vm._l(_vm.arrO, function (element) {
+                        return _c("div", { key: element.name }, [
+                          element.name === "Logo"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "logo",
+                                  attrs: {
+                                    src: "/images/card-builder/logo.png",
+                                    alt: "logo",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          element.name === "Stamp"
+                            ? _c("div", [
+                                _c("img", {
+                                  staticClass: "stamp",
+                                  attrs: {
+                                    src: "/images/card-builder/stamp.png",
+                                    alt: "stamp",
+                                  },
+                                }),
+                              ])
+                            : _vm._e(),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
+              ],
+              1
+            ),
+          ]),
         ]),
       ]),
     ]),

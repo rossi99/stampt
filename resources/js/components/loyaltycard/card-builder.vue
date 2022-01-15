@@ -17,14 +17,14 @@
                 </div>
 
                 <!-- Take all elements objects list -->
-                <draggable class="dragArea list-group" style="max-width: 120px" :list="cardElements" :group="{ name: 'cardItem', pull: 'clone', put: false }" @change="log">
-                    <div class="list-group-item" v-for="element in cardElements" :key="element.name">
-                        <div v-if="element.name === 'Logo'">
-                            <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
+                <draggable :list="cardElements" :group="{ name: 'cardItem', pull: 'clone', put: false }" @change="log">
+                    <div class="card-drag-element" v-for="element in cardElements" :key="element.name" style="cursor: move">
+                        <div v-if="element.name === 'Logo'" class="item-holder">
+                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
                         </div>
 
-                        <div v-if="element.name === 'Stamp'">
-                            <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                        <div v-if="element.name === 'Stamp'" class="item-holder">
+                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
                         </div>
                     </div>
                 </draggable>
@@ -44,217 +44,245 @@
                 <div class="card-holder">
                     <div class="blank-card">
                         <!-- Level 1 buckets -->
-                        <draggable class="dragArea list-group" :list="arrA" group="cardItem" @change="log">
-                            <div class="lvl1-1 bucket empty">
-                                <div v-for="element in arrA" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
+                        <div class="lvl1-1 bucket empty" id="bucketA">
+                            <draggable class="drop-area" :list="arrA" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrA" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
 
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </draggable>
+                            </draggable>
+                        </div>
 
-                        <draggable class="dragArea list-group" :list="arrB" group="cardItem" @change="log">
-                            <div class="lvl1-2 bucket empty">
-                                <div v-for="element in arrB" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
+                        <div class="lvl1-2 bucket empty" id="bucketB">
+                            <draggable class="drop-area" :list="arrB" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrB" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
 
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
-                                    </div>
-                                </div>
-                            </div>
-                        </draggable>
-
-                        <draggable class="dragArea list-group" :list="arrC" group="cardItem" @change="log">
-                            <div class="lvl1-3 bucket empty">
-                                <div v-for="element in arrC" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
-
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </draggable>
+                            </draggable>
+                        </div>
 
-                        <draggable class="dragArea list-group" :list="arrD" group="cardItem" @change="log">
-                            <div class="lvl1-4 bucket empty">
-                                <div v-for="element in arrD" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
+                        <div class="lvl1-3 bucket empty" id="bucketC">
+                            <draggable class="drop-area" :list="arrC" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrC" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
 
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
-                                    </div>
-                                </div>
-                            </div>
-                        </draggable>
-
-                        <draggable class="dragArea list-group" :list="arrE" group="cardItem" @change="log">
-                            <div class="lvl1-5 bucket empty">
-                                <div v-for="element in arrE" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
-
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </draggable>
+                            </draggable>
+                        </div>
 
-                        <!-- Level 2 buckets -->
-                        <draggable class="dragArea list-group" :list="arrF" group="cardItem" @change="log">
-                            <div class="lvl2-1 bucket empty">
-                                <div v-for="element in arrF" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
+                        <div class="lvl1-4 bucket empty" id="bucketD">
+                            <draggable class="drop-area" :list="arrD" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrD" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
 
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
-                                    </div>
-                                </div>
-                            </div>
-                        </draggable>
-
-                        <draggable class="dragArea list-group" :list="arrG" group="cardItem" @change="log">
-                            <div class="lvl2-2 bucket empty">
-                                <div v-for="element in arrG" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
-
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </draggable>
+                            </draggable>
+                        </div>
 
-                        <draggable class="dragArea list-group" :list="arrH" group="cardItem" @change="log">
-                            <div class="lvl2-3 bucket empty">
-                                <div v-for="element in arrH" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
+                        <div class="lvl1-5 bucket empty" id="bucketE">
+                            <draggable class="drop-area" :list="arrE" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrE" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
 
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
-                                    </div>
-                                </div>
-                            </div>
-                        </draggable>
-
-                        <draggable class="dragArea list-group" :list="arrI" group="cardItem" @change="log">
-                            <div class="lvl2-4 bucket empty">
-                                <div v-for="element in arrI" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
-
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </draggable>
+                            </draggable>
+                        </div>
 
-                        <draggable class="dragArea list-group" :list="arrJ" group="cardItem" @change="log">
-                            <div class="lvl2-5 bucket empty">
-                                <div v-for="element in arrJ" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
+                        <div class="lvl2-1 bucket empty" id="bucketF">
+                            <draggable class="drop-area" :list="arrF" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrF" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
 
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
-                                    </div>
-                                </div>
-                            </div>
-                        </draggable>
-
-                        <!-- Level 3 buckets -->
-                        <draggable class="dragArea list-group" :list="arrK" group="cardItem" @change="log">
-                            <div class="lvl3-1 bucket empty">
-                                <div v-for="element in arrK" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
-
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </draggable>
+                            </draggable>
+                        </div>
 
-                        <draggable class="dragArea list-group" :list="arrL" group="cardItem" @change="log">
-                            <div class="lvl3-2 bucket empty">
-                                <div v-for="element in arrL" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
+                        <div class="lvl2-2 bucket empty" id="bucketG">
+                            <draggable class="drop-area" :list="arrG" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrG" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
 
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
-                                    </div>
-                                </div>
-                            </div>
-                        </draggable>
-
-                        <draggable class="dragArea list-group" :list="arrM" group="cardItem" @change="log">
-                            <div class="lvl3-3 bucket empty">
-                                <div v-for="element in arrM" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
-
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </draggable>
+                            </draggable>
+                        </div>
 
-                        <draggable class="dragArea list-group" :list="arrN" group="cardItem" @change="log">
-                            <div class="lvl3-4 bucket empty">
-                                <div v-for="element in arrN" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
+                        <div class="lvl2-3 bucket empty" id="bucketH">
+                            <draggable class="drop-area" :list="arrH" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrH" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
 
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
-                                    </div>
-                                </div>
-                            </div>
-                        </draggable>
-
-                        <draggable class="dragArea list-group" :list="arrO" group="cardItem" @change="log">
-                            <div class="lvl3-5 bucket empty">
-                                <div v-for="element in arrO" :key="element.name">
-                                    <div v-if="element.name === 'Logo'">
-                                        <img src="/images/card-builder/logo.png" class="logo" alt="div logo">
-                                    </div>
-
-                                    <div v-if="element.name === 'Stamp'">
-                                        <img src="/images/card-builder/stamp.png" class="stamp" alt="div stamp">
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </draggable>
+                            </draggable>
+                        </div>
+
+                        <div class="lvl2-4 bucket empty" id="bucketI">
+                            <draggable class="drop-area" :list="arrI" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrI" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
+
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </draggable>
+                        </div>
+
+                        <div class="lvl2-5 bucket empty" id="bucketJ">
+                            <draggable class="drop-area" :list="arrJ" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrJ" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
+
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </draggable>
+                        </div>
+
+                        <div class="lvl3-1 bucket empty" id="bucketK">
+                            <draggable class="drop-area" :list="arrK" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrK" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
+
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </draggable>
+                        </div>
+
+                        <div class="lvl3-2 bucket empty" id="bucketL">
+                            <draggable class="drop-area" :list="arrL" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrL" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
+
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </draggable>
+                        </div>
+
+                        <div class="lvl3-3 bucket empty" id="bucketM">
+                            <draggable class="drop-area" :list="arrM" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrM" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
+
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </draggable>
+                        </div>
+
+                        <div class="lvl3-4 bucket empty" id="bucketN">
+                            <draggable class="drop-area" :list="arrN" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrN" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
+
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </draggable>
+                        </div>
+
+                        <div class="lvl3-5 bucket empty" id="bucketO">
+                            <draggable class="drop-area" :list="arrO" group="cardItem" @change="log">
+                                <div style="width: 100%; text-align: center">
+                                    <div v-for="element in arrO" :key="element.name">
+                                        <div v-if="element.name === 'Logo'">
+                                            <img src="/images/card-builder/logo.png" class="logo" alt="logo">
+                                        </div>
+
+                                        <div v-if="element.name === 'Stamp'">
+                                            <img src="/images/card-builder/stamp.png" class="stamp" alt="stamp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </draggable>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,6 +293,7 @@
 </template>
 
 <script>
+// Draggable Script
 import draggable from 'vuedraggable'
 
 export default {
@@ -302,6 +331,204 @@ export default {
         log: function(evt) {
             window.console.log(evt);
         }
+    },
+    watch: {
+        arrA: function (val) {
+            let bucketA = document.getElementById("bucketA");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketA.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrA.pop();
+            }
+        },
+        arrB: function (val) {
+            let bucketB = document.getElementById("bucketB");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketB.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrB.pop();
+            }
+        },
+        arrC: function (val) {
+            let bucketC = document.getElementById("bucketC");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketC.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrC.pop();
+            }
+        },
+        arrD: function (val) {
+            let bucketD = document.getElementById("bucketD");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketD.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrD.pop();
+            }
+        },
+        arrE: function (val) {
+            let bucketE = document.getElementById("bucketE");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketE.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrE.pop();
+            }
+        },
+        arrF: function (val) {
+            let bucketF = document.getElementById("bucketF");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketF.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrF.pop();
+            }
+        },
+        arrG: function (val) {
+            let bucketG = document.getElementById("bucketG");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketG.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrG.pop();
+            }
+        },
+        arrH: function (val) {
+            let bucketH = document.getElementById("bucketH");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketH.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrH.pop();
+            }
+        },
+        arrI: function (val) {
+            let bucketI = document.getElementById("bucketI");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketI.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrI.pop();
+            }
+        },
+        arrJ: function (val) {
+            let bucketJ = document.getElementById("bucketJ");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketJ.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrJ.pop();
+            }
+        },
+        arrK: function (val) {
+            let bucketK = document.getElementById("bucketK");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketK.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrK.pop();
+            }
+        },
+        arrL: function (val) {
+            let bucketL = document.getElementById("bucketL");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketL.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrL.pop();
+            }
+        },
+        arrM: function (val) {
+            let bucketM = document.getElementById("bucketM");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketM.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrM.pop();
+            }
+        },
+        arrN: function (val) {
+            let bucketN = document.getElementById("bucketN");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketN.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrN.pop();
+            }
+        },
+        arrO: function (val) {
+            let bucketO = document.getElementById("bucketO");
+
+            // remove empty class
+            if (val.length > 0) {
+                bucketO.classList.remove("empty");
+            }
+
+            // ensures only one item
+            if (val.length > 1) {
+                this.arrO.pop();
+
+            }
+        }
     }
 };
 </script>
@@ -314,11 +541,11 @@ export default {
 }
 
 .card-element {
-    width: 20%;
+    width: 15%;
 }
 
 .card-preview {
-    width: 80%;
+    width: 85%;
 }
 
 .panel {
@@ -375,7 +602,7 @@ export default {
     overflow: scroll;
 }
 
-.item-row {
+.card-drag-element {
     width: 90%;
     height: 120px;
     margin: auto;
@@ -384,46 +611,13 @@ export default {
     border-bottom: 1px solid rgba(210, 210, 210, 0.4);
 }
 
-.item-row:last-child {
+.card-drag-element:last-child {
     border-bottom: none;
 }
 
-.item-info {
-    width: 95%;
-    margin: auto;
-}
-
-.label {
-    width: 70%;
-    height: 70px;
-    float: left;
-    display: flex;
-    align-items: center;
-}
-
-.element-container {
-    width: 30%;
-    height: 70px;
-    float: left;
-    display: flex;
-    align-items: center;
-}
-
-.element-holder {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.stamp-holder {
-    border-radius: 50%;
-}
-
-.element-holder:hover {
-    cursor: pointer;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4);
+.item-holder {
+    width: 100%;
+    text-align: center;
 }
 
 .stamp {
@@ -468,15 +662,20 @@ export default {
     transition: all 0.2s;
 }
 
-.bucket:hover {
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4);
-    cursor: pointer;
+.drop-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .empty {
-    /* Show area for user to drop item into */
-    background: rgba(210, 210, 210, 0.1);
-    border: 1px dashed rgba(210, 210, 210, 0.4);
+    /* Outline */
+    border: 1px dashed rgba(160, 160, 160, 0.5);
+}
+
+.empty:hover {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2);
 }
 
 /* Top layer buckets */

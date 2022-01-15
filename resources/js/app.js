@@ -8,7 +8,7 @@ import JQuery from 'jquery'
 // icon imports
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 // component imports
@@ -18,7 +18,7 @@ import landingInfo from "./components/landing/landing-info"
 import builder from "./components/loyaltycard/card-builder"
 
 window.Vue = require('vue').default;
-library.add(faBars, faXmark)
+library.add(faBars, faXmark, faInfoCircle)
 window.$ = JQuery;
 
 // global component registration
